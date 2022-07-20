@@ -1,0 +1,138 @@
+footer {
+    background-color: #373737;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+  }
+  
+  .footer-top nav {
+    color: #fff;
+  }
+  
+  .footer-bottom__menu li, .footer-bottom__menu-socials li {
+    display: inline-block;
+  }
+  
+  .footer-bottom__menu li + li {
+    padding-left: 20px;
+  }
+  
+  .footer-bottom__menu-socials li + li {
+    padding-left: 20px;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+  }
+  
+  .footer-bottom__menu-socials a {
+    color: #373737;
+  }
+  
+  .footer-bottom__menu-socials ul {
+    display: flex;
+  }
+  
+  .footer-bottom__menu-socials a::before {
+    font-family: 'icomoon';
+  }
+  
+  .location::before {
+    margin-right: 5px;
+    content: "\e948";
+    color: #FC8507;
+  }
+  
+  .vk::before {
+    content: "\ea98";
+    color: #597da3;
+  }
+  
+  .wapp::before {
+    content: "\ea93";
+    color: #43d854;
+  }
+  
+  .footer-bottom__menu a {
+      color: #fff;
+      line-height: 36px;
+      border-bottom: 1px solid transparent;
+      transition: all .3s;
+  }
+  
+  .footer-bottom__menu a:hover {
+    border-color: #FC8507;
+  }
+  
+  .header-contacts, .header-contacts2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px
+  }
+  
+  .shop, .phone, .call, .search {
+    margin-left: 20px;
+  }
+  
+  .footer-bottom__menu-socials ul li .location {
+    color: #fff;
+    max-width: 280px;
+  }
+  
+  .footer-bottom .phone {
+    color: #fff;
+  }
+  
+  .footer-bottom .phone:hover{
+    color: #FC8507;  
+  }
+  
+  
+  
+  @media (max-width: 720px) {
+    .footer-top {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer-top img {
+      margin-top: 32px;
+    }
+    .footer-bottom {
+      flex-direction: column;
+    }
+    .footer-contacts {
+      margin: 32px 0;
+    }
+    .footer-contacts .call {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .footer-top nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-top nav ul li {
+      padding-left: 0;
+      text-align: center;
+    }
+    .footer-contacts {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-contacts .call {
+      margin-bottom: 16px;
+    }
+    .footer-phone {
+      margin: 0;
+    }
+  }
+  

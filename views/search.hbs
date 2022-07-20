@@ -1,0 +1,28 @@
+<section class="main-section">
+    <div class="container">
+        <div class="add-inner">
+
+            <h2>Результаты поиска</h2>
+
+            {{#if arr.length }}
+            <div class="products" id="productssearch">
+                {{#each arr}}
+
+                <div class="product">
+                    <img src="{{img}}" alt="{{title}}">
+                    <div class="bottom-info">
+                        <p class="name">{{title}}</p>
+                        <p class="price">{{price}}</p>
+                        <button class="js-add" data-id="{{id}}">В корзину</button>
+                    </div>
+                </div>
+
+                {{/each}}
+            </div>
+            {{else}}
+            <p>Ничего по запросу "<b>{{productSearch}}</b>" не найдено</p>
+            {{/if}}
+            
+        </div>
+    </div>
+</section>

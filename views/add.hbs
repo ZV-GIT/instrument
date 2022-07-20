@@ -1,0 +1,48 @@
+<section class="main-section">
+    <div class="container">
+        <div class="add-inner">
+
+            <h2>Добавить новый товар</h2>
+
+            <form action="/add" method="post">
+                <div class="input-field">
+                    <label for="productType">Тип товара</label>
+                    <select id="productType" type="text" name="productType" required>
+                        <option value="" disabled selected>Выбери тип товара</option>
+                        <option value="1">Ручные инструменты</option>
+                        <option value="2">Электро инструменты</option>
+                        <option value="3">Лаки, краски</option>
+                        <option value="4">Крепежи</option>
+                        <option value="5">Силовое оборудование</option>
+                        <option value="6">Садовый инвентарь</option>
+                        <option value="7">Измерительные инструменты</option>
+                        <option value="8">Такелаж</option>
+                        <option value="9">Режущие инструменты</option>
+                        <option value="10">Пневматика</option>
+                        <option value="11">Сайдинг</option>
+                        <option value="12">Прочее</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="title">Название товара</label>
+                    <input id="title" type="text" name="title" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="price">Цена товара</label>
+                    <input id="price" type="number" name="price" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="img">Ссылка картинки на товар</label>
+                    <input id="img" type="text" name="img" required>
+                </div>
+
+                <button class="submit">Добавить товар</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+<script src="/js/confirm.js"></script>

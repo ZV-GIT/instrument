@@ -1,0 +1,85 @@
+<section class="main-section">
+    <div class="container">
+        <div class="add-inner">
+
+            <h2>Корзина</h2>
+
+            <div id="card">
+                {{#if products.length}}
+                <table class="tableCard">
+                    <thead class="thead">
+                        <tr>
+                            <th>
+                                <p align="left">Название</p>
+                            </th>
+                            <th>
+                                <p align="left">Кол-во</p>
+                            </th>
+                            <th>
+                                <p align="left">Действия</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {{#each products}}
+                        <tr class="tr">
+                            <td class="td1">{{title}}</td>
+                            <td class="td2">{{count}}</td>
+                            <td>
+                                <button class="btn-delete js-remove" data-id="{{id}}">Удалить</button>
+                            </td>
+                        </tr>
+                        {{/each}}
+
+                    </tbody>
+                </table>
+
+                <p class="itogPrice"><strong>Цена:</strong> <span class="price">{{price}}</span> </p>
+                {{!-- <form id="form-card" action="" method="post">
+                    <label for="name">Имя:</label>
+                    <input id="name" type="text" name="name" required>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" type="number" name="phone" required>
+                    <input class="card-submit" type="submit" value="Сделать заказ">
+                </form> --}}
+                <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+                    {{!-- <h2 class="g-form__title g-form__title_main">Заказать обратный звонок</h2> --}}
+                    {{!-- <h2 class="g-form__title g-form__title_respond"></h2> --}}
+                    <div class="g-form__preloader"></div>
+                    <div class="g-form__inputs">
+                        <fieldset class="g-form__input-wrapper">
+                            <label for="name">Имя:</label>
+                            <input class="g-form__input g-form__input_name" id="name" name="Имя"
+                                placeholder="Введите ваше имя" required>
+                        </fieldset>
+
+                        <fieldset class="g-form__input-wrapper">
+                            <label for="phone">Телефон:</label>
+                            <input class="g-form__input g-form__input_tel" id="tel" name="Телефон"
+                                placeholder="Введите ваш телефон" required>
+                        </fieldset>
+
+                        <fieldset class="g-form__input-wrapper" id="cardProducts">
+                            <textarea id="message" name="Сообщение" rows="10"
+                                placeholder="Введите сообщение"></textarea>
+                        </fieldset>
+
+                        <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                            <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                            <input id="honeypot" type="text" name="honeypot" value="">
+                        </fieldset>
+
+                        <div class="g-form__button-wrapper">
+                            <button class="g-form__button">Заказать</button>
+                        </div>
+                    </div>
+                </form>
+                {{else}}
+                <p>Корзина пуста</p>
+                {{/if}}
+            </div>
+
+        </div>
+    </div>
+</section>

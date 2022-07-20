@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  flex: 1 1 auto;
+  padding-bottom: 64px;
+}
+
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 64px 0;
+}
+
+.aboutus-inner p {
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.aboutus-inner ul,
+.aboutus-inner ul li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.aboutus-inner ul,
+.aboutus-inner ul li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.aboutus-inner ul {
+  padding-top: 32px;
+  padding-left: 16px;
+}
+
+.aboutus-inner ul li+li {
+  padding-top: 16px;
+}
+
+.aboutus-inner ul li {
+  font-size: 20px;
+}
+
+.aboutus-inner ul li::before {
+  font-family: 'icomoon';
+  content: "\ea10";
+  color: #373737;
+  margin-right: 9px;
+}
+
+@media (max-width: 880px) {
+  h2 {
+    padding: 32px 0;
+  }
+
+  .aboutus-inner p,
+  .aboutus-inner ul li {
+    font-size: 16px;
+  }
+
+  .main-section {
+    padding-bottom: 32px;
+  }
+}

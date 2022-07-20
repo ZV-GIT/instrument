@@ -1,0 +1,113 @@
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <img src="/img/logow.png" alt="" width="178">
+        <nav class="footer-bottom__menu">
+          <ul>
+            <li>
+              <a href="/">Главная</a>
+            </li>
+            <li>
+              <a href="/shop">Товары</a>
+            </li>
+            <li>
+              <a href="/delivery">Доставка</a>
+            </li>
+            <li>
+              <a href="/about">О Компании</a>
+            </li>
+            <li>
+              <a href="/contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <nav class="footer-bottom__menu-socials">
+          <ul>
+            <li>
+              <p class="location">г. Рязань,185 км окружной дороги (Рынок «Стройка»), 8:00 - 18:00</p>
+            </li>
+            <li>
+              <a href="https://vk.com/instruments62" class="vk"></a>
+            </li>
+            <li>
+              <a href="https://wa.me/89156164244" class="wapp"></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <button class="call" onclick="return OpenPopup();">Обратный звонок</button>
+          <a href="tel:+79610111171" class="phone">8 961 011-11-71</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="popup" id="popup">
+  <div class="popup-inner">
+    <div class="popup-left">
+      <img src="/img/logo.png" alt="" width="260">
+      <div class="popup-socials">
+        <a href="https://vk.com/instruments62" class="vk"></a>
+        <a href="https://wa.me/89156164244" class="wapp"></a>
+      </div>
+      <a href="tel:+79610111171">8 961 011-11-71</a>
+      <p>г. Рязань,185 км окружной дороги<br />(Рынок «Стройка»), 8:00 - 20:00</p>
+    </div>
+    <div class="popup-right">
+      {{!-- <p>Заказать обратный звонок</p> --}}
+      {{!-- <form class="" action="" method="post">
+        <label for="name"></label>
+        <input id="name" type="text" name="name" placeholder="Имя*" required>
+        <label for="phone"></label>
+        <input id="phone" type="text" name="phone" placeholder="Телефон*" required>
+        <label for="comment"></label>
+        <textarea id="comment" name="comment" rows="5" cols="33" placeholder="Комментарий"></textarea>
+        <input type="submit" value="Отправить" id="submitToCall">
+      </form> --}}
+      <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+        <h2 class="g-form__title g-form__title_main">Заказать обратный звонок</h2>
+        {{!-- <h2 class="g-form__title g-form__title_respond"></h2> --}}
+        <div class="g-form__preloader"></div>
+        <div class="g-form__inputs">
+          <fieldset class="g-form__input-wrapper">
+            <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя"
+              required>
+          </fieldset>
+
+          <fieldset class="g-form__input-wrapper">
+            <input class="g-form__input g-form__input_tel" id="tel" name="Телефон" placeholder="Введите ваш телефон" required>
+          </fieldset>
+
+          <fieldset class="g-form__input-wrapper">
+            <textarea id="message" name="Сообщение" rows="10" placeholder="Введите сообщение"></textarea>
+          </fieldset>
+
+          <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+            <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+            <input id="honeypot" type="text" name="honeypot" value="">
+          </fieldset>
+
+          <div class="g-form__button-wrapper">
+            <button class="g-form__button">Заказать</button>
+          </div>
+        </div>
+      </form>
+      <div class="popup-close" onclick="return OpenPopup();"></div>
+    </div>
+  </div>
+</div>
+<div class="popup-finish" id="popup-finish">
+  <div class="popup-finish-inner">
+    <p class="popup-finish-inner-p">Заявка принята</p>
+    <p>Ожидайте скорейшего звонка</p>
+    <div class="popup-finish-close" onclick="return OpenPopupFinish();"></div>
+  </div>
+</div>
+<script src="/js/header.js"></script>
+<script src="/js/price.js"></script>
+<script src="/js/toMail.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/g-form.js"></script>

@@ -1,0 +1,167 @@
+html, body {
+    height: 100%;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-section {
+    flex: 1 1 auto;
+    padding-bottom: 64px;
+  }
+  
+  .main-section p {
+    max-width: 800px;
+    font-size: 20px;
+  }
+  
+  h1, h2, p {
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    padding: 64px 0;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product1 {
+    background-image: url(../img/product1.jpg);
+  }
+  
+  .product2 {
+    background-image: url(../img/product2.jpg);
+  }
+  
+  .product3 {
+    background-image: url(../img/product3.jpg);
+  }
+  
+  .product4 {
+    background-image: url(../img/product4.jpg);
+  }
+
+  .product5 {
+    background-image: url(../img/product5.jpg);
+  }
+  
+  .product6 {
+    background-image: url(../img/product6.jpg);
+  }
+  
+  .product7 {
+    background-image: url(../img/product7.jpg);
+  }
+  
+  .product8 {
+    background-image: url(../img/product8.jpg);
+  }
+
+  .product9 {
+    background-image: url(../img/product9.jpg);
+  }
+  
+  .product10 {
+    background-image: url(../img/product10.jpg);
+  }
+  
+  .product11 {
+    background-image: url(../img/product11.jpg);
+  }
+  
+  .product12 {
+    background-image: url(../img/shop.jpg);
+  }
+  
+  .product {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 255px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  }
+  
+  .product p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 20px;
+    z-index: 1;
+    text-align: center;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product a {
+    padding: 8px 40px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  
+  .product a:hover {
+    border: 1px solid #FC8507;
+    background-color: #FC8507;
+    transition: 0.3s;
+  }
+  
+  .product-black {
+    background-color:rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product-last {
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 1140px) {
+    .product {
+      width: 49%;
+      margin-top: 2%;
+    }
+    .product1, .product2 {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 880px) {
+    h2 {
+      padding: 32px 0;
+    }
+    .main-section p {
+      font-size: 16px;
+    }
+    .main-section {
+      padding-bottom: 32px;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .product {
+      width: 100%;
+      margin-top: 4%;
+    }
+    .product1 {
+      margin-top: 0;
+    }
+  }
+  

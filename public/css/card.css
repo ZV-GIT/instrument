@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  flex: 1 1 auto;
+  padding-bottom: 64px;
+}
+
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 64px 0;
+}
+
+.tableCard {
+  width: 100%;
+}
+
+.thead {
+  height: 64px;
+}
+
+.tr {
+  height: 64px;
+}
+
+.itogPrice {
+  margin: 64px 0;
+}
+
+
+.btn-delete,
+.g-form__button {
+  border: none;
+  background-color: #FC8507 !important;
+  color: #fff !important;
+  font-weight: 700;
+  cursor: pointer;
+  border-color: #FC8507  !important;
+  padding: 5px 10px;
+  border-radius: 3px !important;
+}
+
+.g-form__input-wrapper input {
+  border: 1px solid #373737;
+  margin-right: 20px;
+  height: 30px;
+  width: 190px;
+}
+
+.g-form__input-wrapper label {
+  font-size: 20px;
+}
+
+.g-form__inputs fieldset, .g-form__button-wrapper, .g-form__button {
+  display: inline;
+}
+
+.g-form__inputs {
+  width: 100% !important;
+}
+
+.g-form__button {
+  width: 190px !important;
+  height: 30px  !important;
+}
+
+.call, #cardProducts, .g-form__input-wrapper_hidden {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  #g-form-1 input {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .g-form__inputs fieldset, .g-form__button-wrapper, .g-form__button {
+    display: block;
+  }
+  .g-form__button {
+    width: 100% !important;
+  }
+  #g-form-1 input {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: #373737;
+    outline: none;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  input {
+    outline: none;
+    border: none;
+  }
+  
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
+  }
+  
+  .section0 {
+    height: 160px;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+  }
+  
+  .menu li, .menu-socials li {
+    display: inline-block;
+  }
+  
+  .menu li + li {
+    padding-left: 20px;
+  }
+  
+  .menu-socials li + li {
+    padding-left: 20px;
+  }
+  
+  .menu-socials a {
+    color: #373737;
+  }
+  
+  .menu-socials ul {
+    display: flex;
+  }
+  
+  .menu-socials a::before {
+    font-family: 'icomoon';
+  }
+  
+  .location::before {
+    font-family: 'icomoon';
+    margin-right: 5px;
+    content: "\e948";
+    color: #FC8507;
+  }
+  
+  .vk::before {
+    content: "\ea98";
+    color: #597da3;
+  }
+  
+  .wapp::before {
+    content: "\ea93";
+    color: #43d854;
+  }
+  
+  .menu a {
+      color: #373737;
+      line-height: 36px;
+      border-bottom: 1px solid transparent;
+      transition: all .3s;
+  }
+  
+  .menu a:hover {
+    border-color: #FC8507;
+  }
+  
+  .header-contacts, .header-contacts2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px
+  }
+  
+  .shop, .phone, .call, .search {
+    margin-left: 20px;
+  }
+  
+  .search {
+    display: flex;
+    flex-grow: 1;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #373737;
+  }
+  
+  .search-string {
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .search form {
+    width: 100%;
+    display: inherit;
+  }
+  
+  .search form button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .search form button::before {
+    font-family: 'icomoon';
+    content: "\e986";
+    color: #373737;
+    transition: 0.3s;
+  }
+  
+  .search form button:hover {
+    cursor: pointer;
+  }
+  .search form button:hover::before {
+    color: #FC8507;
+    transition: 0.3s;
+  }
+  
+  .shop {
+    width: 90px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .shop::after {
+    content: "Корзина";
+  }
+  
+  .shop::before {
+    font-family: 'icomoon';
+    content: "\e93a";
+    color: #373737;
+    margin-right: 9px;
+    transition: 0.3s;
+  }
+  
+  .shop:hover, .shop:hover::before {
+    color: #FC8507;
+  }
+  
+  .phone {
+    width: 116px;
+    transition: 0.3s;
+  }
+  
+  .phone:hover {
+    color: #FC8507;
+  }
+  
+  .call {
+    width: 150px;
+    padding: 5px 7px;
+    background-color: transparent;
+    color: #FC8507;
+    text-align: center;
+    border: 1px solid #FC8507;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .call:hover {
+    background-color: #FC8507;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .shop-span {
+    position: absolute;
+      background-color: #FC8507;
+      color: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      top: -10px;
+      right: -10px;
+      align-items: center;
+      font-size: 12px;
+      justify-content: center;
+  }
+  
+  .search-open::before {
+    font-family: 'icomoon';
+    content: "\e986";
+    color: #373737;
+  }
+  
+  .search-open {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #logoimg {
+    padding-top: 6px;
+  }
+  
+  #CloseSearch {
+    margin-left: 15px;
+    border: none;
+    background: none;
+    display: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .header-contacts2 .call, .header-contacts2 .phone, .header-contacts {
+      display: none !important;
+    }
+    .section0 {
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .shop::after {
+      content: "";
+    }
+    .shop {
+      width: 20px;
+      margin-left: 10px !important;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .search {
+      display: none;
+      margin-left: 0;
+    }
+    .search-open {
+      display: inline;
+    }
+    .header-contacts2, .section0 {
+      height: 60px !important;
+    }
+    .menu-btn {
+      bottom: 20px !important;
+    }
+    #logoimg img{
+      width: 166px;
+    }
+    .burger-menu {
+      margin-right: 0 !important;
+    }
+  }
+  

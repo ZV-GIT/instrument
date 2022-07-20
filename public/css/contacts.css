@@ -1,0 +1,78 @@
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 64px 0;
+}
+
+.our-location {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.our-location-img img {
+    max-width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.p-head {
+    font-size: 20px;
+    padding-bottom: 16px
+}
+
+.p-p {
+    font-size: 20px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.our-adress::before {
+    font-family: 'icomoon';
+    content: "\e947";
+    color: #373737;
+    margin-right: 9px;
+}
+
+.our-phone::before {
+    font-family: 'icomoon';
+    content: "\e942";
+    color: #373737;
+    margin-right: 9px;
+}
+
+.our-timework::before {
+    font-family: 'icomoon';
+    content: "\e94e";
+    color: #373737;
+    margin-right: 9px;
+}
+
+.our-timework {
+    padding-bottom: 0px;
+}
+
+@media (max-width: 880px) {
+    h2 {
+        padding: 32px 0;
+    }
+
+    .our-location {
+        margin-bottom: 32px;
+        flex-direction: column-reverse;
+    }
+
+    .our-location-img img {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .p-head,
+    .p-p {
+        font-size: 16px;
+    }
+}

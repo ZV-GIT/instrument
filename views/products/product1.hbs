@@ -1,0 +1,32 @@
+<section class="main-section">
+    
+    <div class="container">
+        <div class="search-inner">
+            <h2>{{title}}</h2>
+
+            {{#if arr.length }}
+            <div class="products" id="products1">
+                {{#each arr}}
+
+                {{#if_eq productType "1"}}
+                <div class="product">
+                    <img src="{{img}}" alt="{{title}}">
+                    <div class="bottom-info">
+                        <p class="name">{{title}}</p>
+                        <p class="price">{{price}}</p>
+                        {{!-- <form action="/product1/additive" method="post">  --}}
+                            {{!-- <input type="hidden" name="id" value="{{id}}"> --}}
+                            <button class="js-add" data-id="{{id}}">В корзину</button> {{! type="submit" name="button" }}
+                        {{!-- </form> --}}
+                    </div>
+                </div>
+                {{/if_eq}}
+
+                {{/each}}
+            </div>
+            {{else}}
+            <p>Раздел "<b>{{title}}</b>" пока ещё не занесён на сайт</p>
+            {{/if}}
+        </div>
+    </div>
+</section>
