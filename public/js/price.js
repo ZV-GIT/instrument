@@ -35,6 +35,7 @@ if ($card) {
                             return `
                             <tr class="tr">
                                 <td class="td1">${c.title}</td>
+                                <td class="img-product"><img src="${c.img}" alt="фото товара отсутствует" width="70"></td>
                                 <td class="td2">${c.count}</td>
                                 <td>
                                     <button class="btn-delete js-remove" data-id="${c.id}">Удалить</button>

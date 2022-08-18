@@ -39,6 +39,7 @@ h2 {
 
 .itogPrice {
   margin: 64px 0;
+  font-size: 24px;
 }
 
 
@@ -62,7 +63,8 @@ h2 {
 }
 
 .g-form__input-wrapper label {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .g-form__inputs fieldset, .g-form__button-wrapper, .g-form__button {
@@ -98,5 +100,11 @@ h2 {
   #g-form-1 input {
     width: 100%;
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-product {
+    display: none;
   }
 }

@@ -12,8 +12,11 @@
                             <th>
                                 <p align="left">Название</p>
                             </th>
+                            <th class="img-product">
+                                <p align="left">Изображение</p>
+                            </th>
                             <th>
-                                <p align="left">Кол-во</p>
+                                <p align="left">Кол.</p>
                             </th>
                             <th>
                                 <p align="left">Действия</p>
@@ -25,6 +28,7 @@
                         {{#each products}}
                         <tr class="tr">
                             <td class="td1">{{title}}</td>
+                            <td class="img-product"><img src="{{img}}" alt="фото товара отсутствует" width="70"></td>
                             <td class="td2">{{count}}</td>
                             <td>
                                 <button class="btn-delete js-remove" data-id="{{id}}">Удалить</button>
@@ -71,7 +75,7 @@
                         </fieldset>
 
                         <div class="g-form__button-wrapper">
-                            <button class="g-form__button">Заказать</button>
+                            <button class="g-form__button">ЗАКАЗАТЬ</button>
                         </div>
                     </div>
                 </form>
